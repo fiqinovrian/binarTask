@@ -24,10 +24,17 @@ app.post('/api/v1/register', (req, res) => {
         password: req.body.password
     }
     User.create(data).then(data => {
-        res.status(201).json(data)
+        res.status(201).render('success')
     }).catch(err => {
-        res.status(500).json(err)
+        res.status(500).render('failed')
     })
+})
+
+app.get('/success', (req, res) => {
+    res.render('success')
+})
+app.get('/failed', (req, res) => {
+    res.render('failed')
 })
 // User.create({
 //     nama: 'Fiqi Novrian',
