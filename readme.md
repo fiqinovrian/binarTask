@@ -3,7 +3,7 @@
     This repository contains javascript code to complete assignments from Binar Academy.
 </p>
 <p>
-    Create a registration page that includes name, date of birth, occupation, email, password
+    Create a registration page that includes :
     <ul>
         <li>nama (name)</li>
         <li>tanggal lahir (date of birth)</li>
